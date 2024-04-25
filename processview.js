@@ -36,7 +36,7 @@ http.createServer(function (req, res) {
         res.write('404 Not Found');
         res.end();
     }
-}).listen(8080);
+}).listen(process.env.PORT);
 
 async function processSearch(req, res) {
     try {
