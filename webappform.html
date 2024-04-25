@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Search</title>
+</head>
+<body>
+    <h1>Stock Search</h1>
+    <form action='http://localhost:8080/process' method="GET">
+        <label for="searchInput">Enter Stock Ticker Symbol or Company Name:</label>
+        <input type="text" id="searchInput" name="searchInput" required>
+        <br>
+        <input type="radio" id="tickerRadio" name="searchType" value="ticker" checked>
+        <label for="tickerRadio">Ticker Symbol</label>
+        <br>
+        <input type="radio" id="companyRadio" name="searchType" value="company">
+        <label for="companyRadio">Company Name</label>
+        <br>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
